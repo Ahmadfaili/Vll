@@ -7,7 +7,7 @@ export default function Module
   return (
     <>
     
-       <div className={`module flex bg-white absolute top-[54px] right-[30px] rounded-lg
+       <div className={`module flex bg-white absolute top-[54px] z-10 right-[30px] rounded-lg
        overflow-hidden
        bodere
        shadow-[0px_-3px_5px_0px_#90cdf4]
