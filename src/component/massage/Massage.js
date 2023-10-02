@@ -19,7 +19,7 @@ export default function Massage(props) {
 
   return (
     <>
-      {/* #00BCD4 */}
+      
       <div
         className={`massage ${msgRightLeft} 
         flex min-w-[80px] max-w-[250px] 

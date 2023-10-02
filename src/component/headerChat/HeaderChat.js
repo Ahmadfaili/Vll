@@ -16,8 +16,9 @@ export default function
         <div className="header_chat flex items-center justify-between py-4 px-4 
                          shadow-lg
             ">
-            <div className='ima_profile_folowers'>
+            <div className='ima_profile_folowers flex items-center'>
                 <img src={image} alt='img_profile ' className='w-[50px] h-[50px] rounded-full '/>
+                <p className='ml-4 text-xl '>Feili</p>
             </div>
             <div
               className={`menu_profile ${
