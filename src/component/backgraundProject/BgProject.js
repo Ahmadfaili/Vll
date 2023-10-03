@@ -3,7 +3,7 @@ import React from 'react'
 export default function BgProject() {
   return (
     <>
-    <div className='flex w-screen h-screen 
+    <div className='flex w-screen h-screen min-h-[600px]
     bg-gradient-to-tr from-[#c373a1] from-20% via-[#919fdc]  to-[#61f6f0]
      overflow-hidden   relative
     

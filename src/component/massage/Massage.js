@@ -31,7 +31,7 @@ export default function Massage(props) {
       >
         <div className="msg">
           <p className="text-lg text-black text-left">
-            hi how are you to dey
+            hi,how are you todey?
           </p>
         </div>
         <div className="time_check flex w-full justify-end  items-center ">

@@ -5,7 +5,12 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    screens:{
+      'mobile':{'min':'375px','max':'426px'}
+    }
   },
+
+  
   plugins: [
 
     require("tailwind-scrollbar")({nocompatible: true})

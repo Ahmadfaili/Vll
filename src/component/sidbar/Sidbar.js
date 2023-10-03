@@ -20,7 +20,7 @@ export default function Sidbar() {
             border-r
             rounded-tl-lg
             rounded-bl-lg
-            overflow-hidden  "
+            overflow-hidden mobile:w-full "
       >
         <header className="w-[100%] flex  border-b px-3 py-3">
           <div className="profile  flex items-center  flex-row w-[100%] justify-between">
@@ -75,7 +75,7 @@ export default function Sidbar() {
 
           <div
             className="chat_list_item bg-transparent flex flex-col w-[100%]
-                        h-[48%]            
+                        h-[48%] mobile:h-[28%]           
             
            "
           >
@@ -94,7 +94,7 @@ export default function Sidbar() {
             </Scrollbars> */}
           </div>
         </div>
-        <div
+       {/*  <div
           className="sidbar_footer flex items-center justify-start
          w-full pl-2 h-[5%] overflow-hidden bg-transparent border-t border-gray-400"
         >
@@ -107,7 +107,7 @@ export default function Sidbar() {
           <div className="text-center flex pt-1">
             <FiChevronRight className="text-2xl font-bold text-gray-700 " />
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   )

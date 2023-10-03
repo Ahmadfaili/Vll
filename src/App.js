@@ -6,7 +6,7 @@ import BgProject from './component/backgraundProject/BgProject';
 
 function App() {
   return (
-    <div className="App reletive ">
+    <div className="App relative flex ">
         {/* <Account/> */}
         
         <BgProject/>
