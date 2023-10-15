@@ -1,11 +1,10 @@
-import React, {useRef, useState} from "react"
+import React, { useState} from "react"
 import img from "../../assets/image/Space.jpg"
-import {FiMoreVertical, FiSearch, FiChevronRight} from "react-icons/fi"
-import {FaWhatsappSquare, FaAngleRight} from "react-icons/fa"
+import {FiMoreVertical, FiSearch,} from "react-icons/fi"
 
 import Module from "../module/Module"
 import ListItem from "../listItem/ListItem"
-import {Scrollbars} from "react-custom-scrollbars-2"
+
 export default function Sidbar() {
   const [open, setOpen] = useState(false)
 
@@ -20,15 +19,19 @@ export default function Sidbar() {
             border-r
             rounded-tl-lg
             rounded-bl-lg
-            overflow-hidden mobile:w-full "
+            overflow-hidden mobile:w-full tablet:w-[35%] mobile:hidden "
       >
-        <header className="w-[100%] flex  border-b px-3 py-3">
+        <header className="w-[100%] flex  border-b px-3 py-3 mobile:px-2 mobile:py-1 tablet:px-1 tablet:py-[0.15rem]">
           <div className="profile  flex items-center  flex-row w-[100%] justify-between">
             <div
               className="profile_img  
                      rounded-full  overflow-hidden p-1"
             >
-              <img src={img} className="rounded-full w-[50px] h-[50px] flex" />
+              <img
+                src={img} alt="image_profile_user"
+                className="rounded-full w-[50px] h-[50px] mobile:w-[45px] mobile:h-[45px] tablet:w-[45px]
+                tablet:h-[45px] flex"
+              />
             </div>
             <div
               className={`menu_profile ${
@@ -39,7 +42,7 @@ export default function Sidbar() {
                     items-center justify-center relative cursor-pointer`}
               onClick={menu_handler}
             >
-              <FiMoreVertical className="text-xl mx-3 my-3" />
+              <FiMoreVertical className="text-xl mobile:text-base mx-3 my-3" />
               {open ? <Module open /> : null}
             </div>
           </div>
@@ -47,27 +50,27 @@ export default function Sidbar() {
         <div className="main flex flex-col">
           <div
             className="search_list_item flex w-full justify-center items-center py-4
-                     bg-slate-50/50 shadow-lg"
+                     bg-slate-50/50 shadow-lg mobile:py-2 mobile:px-1 tablet:py-[6px] tablet:px-0"
           >
             <div
               className="search_input  items-center w-[90%] bg-zinc-400/25
                                           py-1
                                           justify-evenly
-
+                                          mobile:w-[95%]
                                            rounded-lg
                                            border
                                            flex
-                                           
+                                           tablet:p-[6px]
                                          "
             >
-              <FiSearch className="text-zinc-600 text-lg" />
+              <FiSearch className="text-zinc-600 text-lg tablet:text-base" />
               <input
                 type="text"
                 placeholder="Search or start new chat"
                 className="text-lg placeholder:text-zinc-600 border-none
                                         outline-none bg-transparent
-                                       w-[76%] p-0
-                            
+                                       w-[76%] p-0 mobile:text-sm
+                                        tablet:text-xs
                             "
               />
             </div>
@@ -75,26 +78,27 @@ export default function Sidbar() {
 
           <div
             className="chat_list_item bg-transparent flex flex-col w-[100%]
-                        h-[48%] mobile:h-[28%]           
+                        h-[48%] mobile:h-[41%]           
             
            "
           >
-            <div className=' scrollbar scrollbar-w-2 scrollbar-thumb-rounded-2xl overflow-auto
+            <div
+              className=" scrollbar scrollbar-w-2 mobile:scrollbar-w-1 tablet:scrollbar-w-[5px] scrollbar-thumb-rounded-2xl overflow-auto
              flex-col scrollbar-thumb-[#838383cb] scrollbar-track-transparent 
-              flex h-[100%] '>
-
+              flex h-[100%] "
+            >
               <ListItem />
               <ListItem /> <ListItem />
               <ListItem /> <ListItem /> <ListItem /> <ListItem /> <ListItem />
               <ListItem /> <ListItem /> <ListItem /> <ListItem /> <ListItem />
               <ListItem />
-              </div>
+            </div>
             {/* <Scrollbars style={{height: 560}}>
               
             </Scrollbars> */}
           </div>
         </div>
-       {/*  <div
+        {/*  <div
           className="sidbar_footer flex items-center justify-start
          w-full pl-2 h-[5%] overflow-hidden bg-transparent border-t border-gray-400"
         >

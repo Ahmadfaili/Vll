@@ -14,11 +14,13 @@ export default function
   return (
     <>
         <div className="header_chat flex items-center justify-between py-4 px-4 
-                         shadow-lg
+                         shadow-lg tablet:py-2 tablet:px-2  mobile:py-2 mobile:px-2
             ">
             <div className='ima_profile_folowers flex items-center'>
-                <img src={image} alt='img_profile ' className='w-[50px] h-[50px] rounded-full '/>
-                <p className='ml-4 text-xl '>Feili</p>
+                <img src={image} alt='img_profile' className='w-[50px] h-[50px] mobile:w-[40px]
+                mobile:h-[40px] tablet:w-[45px]
+                tablet:h-[45px] rounded-full '/>
+                <p className='ml-4 text-xl tablet:ml-2 tablet:text-base mobile:text-sm mobile:ml-2'>Feili</p>
             </div>
             <div
               className={`menu_profile ${
@@ -29,7 +31,7 @@ export default function
                     items-center justify-center relative cursor-pointer`}
               onClick={menu_handler}
             >
-              <FiMoreVertical className="text-xl mx-3 my-3" />
+              <FiMoreVertical className="text-xl mx-3 my-3 tablet:text-base mobile:text-sm" />
               {open ? <Module open /> : null}
             </div>    
         </div>
