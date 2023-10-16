@@ -1,6 +1,6 @@
-import React, { useState} from "react"
+import React, {useState} from "react"
 import img from "../../assets/image/Space.jpg"
-import {FiMoreVertical, FiSearch,} from "react-icons/fi"
+import {FiMoreVertical, FiSearch} from "react-icons/fi"
 
 import Module from "../module/Module"
 import ListItem from "../listItem/ListItem"
@@ -19,18 +19,19 @@ export default function Sidbar() {
             border-r
             rounded-tl-lg
             rounded-bl-lg
-            overflow-hidden mobile:w-full tablet:w-[35%] mobile:hidden "
+            overflow-hidden mobile:w-full tablet:w-[35%]  "
       >
-        <header className="w-[100%] flex  border-b px-3 py-3 mobile:px-2 mobile:py-1 tablet:px-1 tablet:py-[0.15rem]">
+        <header className="w-[100%] flex  border-b p-2">
           <div className="profile  flex items-center  flex-row w-[100%] justify-between">
             <div
               className="profile_img  
-                     rounded-full  overflow-hidden p-1"
+                     rounded-full  overflow-hidden "
             >
               <img
-                src={img} alt="image_profile_user"
-                className="rounded-full w-[50px] h-[50px] mobile:w-[45px] mobile:h-[45px] tablet:w-[45px]
-                tablet:h-[45px] flex"
+                src={img}
+                alt="image_profile_user"
+                className="rounded-full w-[50px] h-[50px] mobile:w-[36px] mobile:h-[36px] tablet:w-[40px]
+                tablet:h-[40px] flex"
               />
             </div>
             <div
@@ -42,7 +43,7 @@ export default function Sidbar() {
                     items-center justify-center relative cursor-pointer`}
               onClick={menu_handler}
             >
-              <FiMoreVertical className="text-xl mobile:text-base mx-3 my-3" />
+              <FiMoreVertical className="text-xl mobile:text-sm tablet:text-base mx-3 my-3" />
               {open ? <Module open /> : null}
             </div>
           </div>
@@ -93,25 +94,8 @@ export default function Sidbar() {
               <ListItem /> <ListItem /> <ListItem /> <ListItem /> <ListItem />
               <ListItem />
             </div>
-            {/* <Scrollbars style={{height: 560}}>
-              
-            </Scrollbars> */}
           </div>
         </div>
-        {/*  <div
-          className="sidbar_footer flex items-center justify-start
-         w-full pl-2 h-[5%] overflow-hidden bg-transparent border-t border-gray-400"
-        >
-          <div className="icon_vll pl-2 mr-5">
-            <FaWhatsappSquare className="text-green-400 text-[45px] bg-white " />
-          </div>
-          <div className="link_app flex flex-row items-center justify-center text-center">
-            <p className="text-xl text-gray-700">Get Vll For Windows</p>
-          </div>
-          <div className="text-center flex pt-1">
-            <FiChevronRight className="text-2xl font-bold text-gray-700 " />
-          </div>
-        </div> */}
       </div>
     </>
   )

@@ -8,7 +8,7 @@ export default function ListItem() {
   return (
     <div className="item_chat flex flex-row   pt-2 pr-2  pl-3 tablet:pt-1 tablet:pr-1 tablet:pl-2 hover:bg-zinc-400/25 cursor-pointer ">
       <div className="img_item flex items-center justify-center ">
-        <img src={img} alt="image_followes" className="w-[60px] h-[60px] mobile:w-[45px] mobile:h-[45px] tablet:w-[50px] tablet:h-[50px]
+        <img src={img} alt="image_followes" className="w-[60px] h-[60px] mobile:w-[40px] mobile:h-[40px] tablet:w-[45px] tablet:h-[45px]
          rounded-full " />
       </div>
       <div

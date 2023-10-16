@@ -6,7 +6,7 @@ import MassageSend from '../massageSend/MassageSend';
 export default function Main() {
   return (
     <>
-       <div className='main w-[70%] h-[100%]  overflow-hidden flex flex-col mobile:w-[100%] tablet:w-[65%]'> 
+       <div className='main w-[70%] h-[100%] mobile:hidden overflow-hidden flex flex-col mobile:w-[100%] tablet:w-[65%]'> 
        
         <HeaderChat/>
         <MassagesChat/> 

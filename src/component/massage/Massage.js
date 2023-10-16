@@ -47,7 +47,7 @@ export default function Massage(props) {
         </div>
 
         <div
-          className={`flex absolute  top-[-2px] tablet:top-[-1px] ${svgClassName}`}
+          className={`flex absolute  top-[-2px] mobile:top-[-1.8px] ${svgClassName}`}
         >
           <svg
             className="w-[18px] h-[18px] mobile:w-4 mobile:h-4 tablet:w-4 tablet:h-4 "

@@ -13,13 +13,14 @@ export default function
         }
   return (
     <>
-        <div className="header_chat flex items-center justify-between py-4 px-4 
-                         shadow-lg tablet:py-2 tablet:px-2  mobile:py-2 mobile:px-2
+        <div className="header_chat flex items-center justify-between p-2
+                         shadow-lg 
+                         
             ">
             <div className='ima_profile_folowers flex items-center'>
-                <img src={image} alt='img_profile' className='w-[50px] h-[50px] mobile:w-[40px]
-                mobile:h-[40px] tablet:w-[45px]
-                tablet:h-[45px] rounded-full '/>
+                <img src={image} alt='img_profile' className='w-[50px] h-[50px] mobile:w-[36px]
+                mobile:h-[36px] tablet:w-[40px]
+                tablet:h-[40px] rounded-full '/>
                 <p className='ml-4 text-xl tablet:ml-2 tablet:text-base mobile:text-sm mobile:ml-2'>Feili</p>
             </div>
             <div

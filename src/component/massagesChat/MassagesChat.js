@@ -6,7 +6,7 @@ export default function MassagesChat(props) {
   return (
     <>
 
-        <div className='massagesChat flex w-full h-[81%] flex-col overflow-hidden
+        <div className='massagesChat flex w-full flex-col overflow-hidden
           ' > 
           
             <div className=' scrollbar scrollbar-w-2 mobile:scrollbar-w-1 tablet:scrollbar-w-[5px]
