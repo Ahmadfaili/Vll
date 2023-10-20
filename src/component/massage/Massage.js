@@ -8,7 +8,7 @@ export default function Massage(props) {
   useEffect(() => {
     console.log()
     if (msgRtl === "left") {
-      setmsgRightLeft("bg-[#00BCD4] self-start ")
+      setmsgRightLeft("bg-[#00BCD4] dark:bg-[#111b21]/90 self-start ")
       setSvgClassName("left-[-14px] mobile:left-[-12px] tablet:left-[-12px] ")
     }
     if (msgRtl === "right") {
@@ -31,7 +31,7 @@ export default function Massage(props) {
           `}
       >
         <div className="msg">
-          <p className="text-lg text-black text-left mobile:text-sm tablet:text-[15px]">
+          <p className="text-lg text-black text-left mobile:text-sm tablet:text-[15px] dark:text-white">
             hi,how are you todey?
           </p>
         </div>
@@ -50,9 +50,10 @@ export default function Massage(props) {
           className={`flex absolute  top-[-2px] mobile:top-[-1.8px] ${svgClassName}`}
         >
           <svg
-            className="w-[18px] h-[18px] mobile:w-4 mobile:h-4 tablet:w-4 tablet:h-4 "
+            className={`w-[18px] h-[18px] mobile:w-4 mobile:h-4 tablet:w-4 tablet:h-4
+                       ${msgRtl==="left"?"dark:fill-[#111b21]/90":"#77f263ab"}`}
             viewBox="0 0 48 48"
-            fill={`${msgRtl === "left" ? "#00BCD4" : "#77f263ab"}`}
+            fill={`${msgRtl === "left" ? "#00BCD4" : "#77f263ab"} `}
             xmlns="http://www.w3.org/2000/svg"
             transform={`${
               msgRtl === "left" ? "rotate(180)" : "matrix(1, 0, 0, -1, 0, 0)"

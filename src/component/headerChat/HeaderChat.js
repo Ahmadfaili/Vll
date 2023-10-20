@@ -14,7 +14,7 @@ export default function
   return (
     <>
         <div className="header_chat flex items-center justify-between p-2
-                         shadow-lg 
+                         shadow-lg dark:bg-[#202c33]/75
                          
             ">
             <div className='ima_profile_folowers flex items-center'>

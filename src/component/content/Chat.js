@@ -11,7 +11,8 @@ export default function Chat() {
         <div
           className="  flex  z-50 w-[94%] h-[92%] mobile:h-[98%] mobile:w-[100%]
              bg-white/[0.4] rounded-2xl border-[1px] tablet:w-[98%] tablet:h-[98%]
-            border-white backdrop-blur-[5px] flex-row
+            border-white backdrop-blur-[5px] flex-row overflow-hidden 
+            dark:border-[rgba(26,30,32,0.5)]  
             "
         >
           <Sidbar />

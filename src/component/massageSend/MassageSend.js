@@ -8,7 +8,7 @@ export default function MassageSend() {
     <>
       <div
         className="massage_send shadow-[0_-2px_10px_-3px_rgba(0,0,0,0.3);]  
-      w-full "
+      w-full dark:bg-[#202c33]/75"
       >
         <div className="flex-row h-full flex items-center justify-center  px-5 mobile:px-2 tablet:px-3">
           <div className=" flex items-center justify-start pr-2 ">
@@ -23,9 +23,10 @@ export default function MassageSend() {
         overflow-hidden "
           >
             <input
-              className="py-2 px-4 mobile:py-2 mobile:px-1 mobile:text-sm tablet:py-2 tablet:px-3 tablet:text-sm 
-            text-xl overflow-hidden bg-white
-           w-full outline-none border rounded-md placeholder:text-lg 
+              className="py-2 px-4 mobile:py-2 mobile:px-1 mobile:text-sm tablet:py-2 
+              tablet:px-3 tablet:text-sm 
+            text-xl overflow-hidden bg-white dark:bg-[#202c33]/75 dark:text-[#e6e9ea]
+           w-full outline-none border rounded-md placeholder:text-lg dark:border-0
            mobile:placeholder:text-sm tablet:placeholder:text-base "
               placeholder="Type a massage"
             />
