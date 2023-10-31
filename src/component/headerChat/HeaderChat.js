@@ -21,7 +21,7 @@ export default function
                 <img src={image} alt='img_profile' className='w-[50px] h-[50px] mobile:w-[36px]
                 mobile:h-[36px] tablet:w-[40px]
                 tablet:h-[40px] rounded-full '/>
-                <p className='ml-4 text-xl tablet:ml-2 tablet:text-base mobile:text-sm mobile:ml-2'>Feili</p>
+                <p className='ml-4 text-xl tablet:ml-2 tablet:text-base mobile:text-sm mobile:ml-2 dark:text-[#fffff0]'>Feili</p>
             </div>
             <div
               className={`menu_profile ${
@@ -32,7 +32,7 @@ export default function
                     items-center justify-center relative cursor-pointer`}
               onClick={menu_handler}
             >
-              <FiMoreVertical className="text-xl mx-3 my-3 tablet:text-base mobile:text-sm" />
+              <FiMoreVertical className="text-xl mx-3 my-3 tablet:text-base mobile:text-sm dark:text-[#bfbfbf]" />
               {open ? <Module open /> : null}
             </div>    
         </div>

@@ -5,16 +5,19 @@ import {FiMoreVertical, FiSearch} from "react-icons/fi"
 import Module from "../module/Module"
 import ListItem from "../listItem/ListItem"
 import DarkModeToggle from "../darkMode/DarkModeToggle"
-
+import LanguageSelector from "../language/LanguageSelector"
+import {useTranslation} from "react-i18next";
 export default function Sidbar() {
+  
   const [open, setOpen] = useState(false)
-
+  const {t} =useTranslation();
   const menu_handler = () => {
     setOpen(!open)
   }
 
   return (
     <>
+    
       <div
         className="sidbar  flex flex-col w-[30%] h-[100%] 
             border-r dark:border-[rgba(26,30,32,0.5)]  
@@ -22,6 +25,7 @@ export default function Sidbar() {
             rounded-bl-lg
             overflow-hidden mobile:w-full tablet:w-[35%]  "
       >
+        <h3>{t("Welcome.text")}</h3>
         <header className="w-[100%] flex   p-2 dark:bg-[#202c33]/75">
           <div className="profile  flex items-center  flex-row w-[100%] justify-between">
             <div
@@ -37,6 +41,7 @@ export default function Sidbar() {
             </div>
             <div className="flex items-center justify-center  ">
               <DarkModeToggle />
+              <LanguageSelector/>
               <div
                 className={`menu_profile ${
                   open ? "bg-slate-200 dark:bg-gray-700" : "bg-transparent"
@@ -47,7 +52,8 @@ export default function Sidbar() {
                     items-center justify-center relative cursor-pointer`}
                 onClick={menu_handler}
               >
-                <FiMoreVertical className="text-xl mobile:text-sm tablet:text-base mx-3 my-3" />
+                <FiMoreVertical className="text-xl mobile:text-sm tablet:text-base mx-3 my-3 
+                dark:text-[#bfbfbf]" />
                 {open ? <Module open /> : null}
               </div>
             </div>
@@ -73,7 +79,7 @@ export default function Sidbar() {
               <FiSearch className="text-zinc-600 dark:text-[#8696a0] text-lg tablet:text-base " />
               <input
                 type="text"
-                placeholder="Search or start new chat"
+                placeholder="pla"
                 className="text-lg placeholder:text-zinc-600 border-none
                                         outline-none bg-transparent
                                        w-[76%] p-0 mobile:text-sm
@@ -81,6 +87,7 @@ export default function Sidbar() {
                             "
               />
             </div>
+                
           </div>
 
           <div

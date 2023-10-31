@@ -50,7 +50,7 @@ export default function Massage(props) {
           className={`flex absolute  top-[-2px] mobile:top-[-1.8px] ${svgClassName}`}
         >
           <svg
-            className={`w-[18px] h-[18px] mobile:w-4 mobile:h-4 tablet:w-4 tablet:h-4
+            className={`w-[18px] h-[18px] mobile:w-4 mobile:h-4 tablet:w-4 tablet:h-4 border-0
                        ${msgRtl==="left"?"dark:fill-[#111b21]/90":"#77f263ab"}`}
             viewBox="0 0 48 48"
             fill={`${msgRtl === "left" ? "#00BCD4" : "#77f263ab"} `}
