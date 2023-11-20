@@ -1,10 +1,10 @@
-import React from "react"
-import Sidbar from "../sidbar/Sidbar"
-import Main from "../main/Main"
-export default function Chat() {
+import React from 'react'
+import Sidbar from '../component/sidbar/Sidbar';
+import Main from '../component/main/Main';
+export default function Home() {
   return (
     <>
-      <div
+        <div
         className="absolute flex  z-50 w-full h-full top-0 left-0 p-3
     right-0 bottom-0 items-center justify-center m-auto"
       >
@@ -19,6 +19,7 @@ export default function Chat() {
           <Main />
         </div>
       </div>
+    
     </>
   )
 }

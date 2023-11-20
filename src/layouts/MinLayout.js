@@ -1,9 +1,10 @@
 import React from 'react'
+import { Outlet } from 'react-router-dom'
 
-export default function BgProject() {
+export default function MinLayout() {
   return (
     <>
-    <div className='flex w-screen h-screen min-h-[600px]
+        <div className='flex w-screen h-screen min-h-[600px]
     bg-gradient-to-tr from-[#c373a1] from-20% via-[#919fdc]  to-[#61f6f0]
      overflow-hidden   relative dark:bg-gradient-to-r dark:from-slate-900 dark:to-indigo-900
     
@@ -22,10 +23,8 @@ export default function BgProject() {
       </div>
 
 
-    
-        
-    </div>
-    
+        {<Outlet/>}
+      </div>
     </>
   )
 }

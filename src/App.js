@@ -1,22 +1,17 @@
 
-import './App.css';
-import Chat from './component/content/Chat';
-import Account from './component/account/Account';
-import BgProject from './component/backgraundProject/BgProject';
+import React from "react"
+import {BrowserRouter} from "react-router-dom"
 
+import Router from "./routes"
 
-
-function App() { 
-
- 
+function App() {
   return (
-    <div className="App relative flex ">
-        {/* <Account/> */}
-        
-        <BgProject/>
-        <Chat/>
+    <div className="App text-center relative flex ">
+      <BrowserRouter>
+        <Router />
+      </BrowserRouter>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

@@ -4,7 +4,11 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import  "./i18n";
+import axios from "axios";
+axios.defaults.baseURL="http://localhost:3000/graphql";
+axios.defaults.headers.post['Accept']='application/json';
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <React.StrictMode>
     <App />

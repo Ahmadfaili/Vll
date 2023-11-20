@@ -7,8 +7,10 @@ import ListItem from "../listItem/ListItem"
 import DarkModeToggle from "../darkMode/DarkModeToggle"
 import LanguageSelector from "../language/LanguageSelector"
 import {useTranslation} from "react-i18next";
+import {user} from "../../api/user";
 export default function Sidbar() {
-  
+    
+console.log(user)
   const [open, setOpen] = useState(false)
   const {t} =useTranslation();
   const menu_handler = () => {
@@ -19,6 +21,8 @@ export default function Sidbar() {
     <>
     
       <div
+
+      
         className="sidbar  flex flex-col w-[30%] h-[100%] 
             border-r dark:border-[rgba(26,30,32,0.5)]  
             rounded-tl-lg
